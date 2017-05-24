@@ -6,12 +6,9 @@ import java.util.Scanner;
 public class DrawTree {
     public static void main(String[] args) {
 
+        System.out.println("Witaj, podaj wysokość drzewka a Ci je narysuje:");
         int heightOfTree = readInputFromUser();
-        //System.out.println(heightOfTree);
         drawTree(heightOfTree);
-
-
-
 
     }
 
@@ -47,19 +44,15 @@ public class DrawTree {
             numberOfStars+=2;
             numberOfSpaces-=1;
         }
-
-
-
     }
 
-    public static void printStars(int stars){
+    private static void printStars(int stars){
 
         for(int i = 0; i <stars;i++)
             System.out.print("*");
 
-
     }
-    public static void printSpaces(int spaces){
+    private static void printSpaces(int spaces){
         for(int i = 0; i <spaces;i++)
             System.out.print(" ");
     }
